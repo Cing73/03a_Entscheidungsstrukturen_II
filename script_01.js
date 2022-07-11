@@ -64,34 +64,51 @@ isJohnEqual = (ageJohn == ageMark);
 // }
 
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
-const firstName = "Jane";
-let job;
+// const firstName = "Jane";
+// let job;
 
-job = "driver";     // .. fährt TAXI! / UBER
-job = "diver";      // .. taucht im Rhein! 
-job = "artist";     // .. malt ein Bild!
-job = "pilot";      // .. macht etwas anderes! --> default
-job = "teacher";    // .. unterrichtet!
-job = "instructor";  // .. unterrichtet!
-switch (job) 
-{
-    case "driver": // Test auf ==
-        console.log(firstName + " fährt TAXI! / UBER")
-        break;
-        case "diver": // Test auf ==
-        console.log(firstName + " taucht im Rhein!")
-        break;
-        case "artist": // Test auf ==
-        console.log(firstName + " malt ein Bild!")
-        break;
-        case "teacher": // Test auf ==
-        case "instructor": // Test auf ==
-        console.log(firstName + " unterrichtet!")
-        break;
+// job = "driver";     // .. fährt TAXI! / UBER
+// job = "diver";      // .. taucht im Rhein! 
+// job = "artist";     // .. malt ein Bild!
+// job = "pilot";      // .. macht etwas anderes! --> default
+// job = "teacher";    // .. unterrichtet!
+// job = "instructor";  // .. unterrichtet!
+// switch (job) 
+// {
+//     case "driver": // Test auf ==
+//         console.log(firstName + " fährt TAXI! / UBER")
+//         break;
+//         case "diver": // Test auf ==
+//         console.log(firstName + " taucht im Rhein!")
+//         break;
+//         case "artist": // Test auf ==
+//         console.log(firstName + " malt ein Bild!")
+//         break;
+//         case "teacher": // Test auf ==
+//         case "instructor": // Test auf ==
+//         console.log(firstName + " unterrichtet!")
+//         break;
 
 
 
-        default:
-        console.log(firstName + " macht etwas anderes!")
+//         default:
+//         console.log(firstName + " macht etwas anderes!")
+//         break;
+// }
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = true;
+const a = 2;
+
+switch (cond) {
+    case (a == 1):
+        console.log("a ist gleich 1")
+        break;
+    case (a == 2):
+        console.log("a ist gleich 2")
+        break;
+    default:
+        console.log("a hat einen anderen Wert")
         break;
 }
